@@ -17,5 +17,5 @@ jobs:
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
     - name: Docker Image Build
       run: docker build -t dummy-node-app ./app
-    - name:
+    - name: Push to docker Hub
       run: docker push alamjewel/dummy-node-app:latest
